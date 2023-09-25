@@ -68,7 +68,7 @@ button {
   width: 35rem;
   display: inline-block;
   text-align: center;
-  background-image: url('/Users/moniii/Documents/coursework/block29/Puppy-Bowl2/src/images/stockPup.jpg');
+  background-image: url('images/stockPup.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   text-shadow: 2px 0 0 deeppink, -1px 0 0 black, 0 2px 0 black, 0 -1px 0 gray;

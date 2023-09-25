@@ -2,8 +2,8 @@ export default function Home() {
   return(
     <div className="home-div">
       <h1>Welcome to our 15th annual Puppy Bowl!</h1>
-      <img src="/src/images/homePage.png" alt="puppy bowl pic" className="home-pic" />
-      <img src='/src/images/puppy.png' alt='puppy with football' className='home-pic2' />
+      <img src="src/images/homePage.png" alt="puppy bowl pic" className="home-pic" />
+      <img src='src/images/puppy.png' alt='puppy with football' className='home-pic2' />
       <p className='home-paragraph'>
         🏈 Get ready for the cuteness showdown at this year's Puppy Bowl!
         <br></br><br></br>
