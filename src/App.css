@@ -124,20 +124,28 @@ input:focus {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 60rem;
+  left: 10%;
+  width: 80rem;
   justify-content: center;
+  column-count: 3;
+}
+
+#pup-name {
+  margin-top: auto;
+  font-size: 20px;
 }
 
 .reg-players {
   display: flex;
   flex-wrap: wrap;
-  width: 45rem;
+  width: 80rem;
   margin-bottom: 30px;
 }
 
 .pup-card {
   border: 2px solid wheat;
-  height: 25rem;
+  height: 35rem;
+  width: 20rem;
   justify-content: center;
   padding: 5px;
   text-align: center;
@@ -151,6 +159,8 @@ img {
 #all-pups-h1 {
   width: 50rem;
   color: aliceblue;
+  text-align: center;
+  margin: auto;
 }
 
 .small-details {

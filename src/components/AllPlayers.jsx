@@ -19,6 +19,31 @@ export default function AllPlayers() {
     fetchData()
   }, []);
 
+  const tricks = [' Sit', ' Roll Over', ' Play Dead', ' Shake', ' Spin', ' Bow', ' Jump']
+  const likes = [' Dirty Socks', ' Bones', ' Peanut Butter', ' Chicken', ' Cuddles', ' Sticks', ' Treats']
+  const dislikes = [' Baths', ' Mailman', ' Strange Men', ' Vet', ' Vacuum', ' Being Alone', ' Thunder']
+
+  const chooseTricks = () => {
+    const y = 5
+    let shuffled = tricks.sort(function(){ return 0.5 - Math.random() })
+    let selected = shuffled.slice(0, y)
+    return(selected.toString())
+  }
+
+  const chooseLikes = () => {
+    const y = 6
+    let shuffled = likes.sort(function(){ return 0.5 - Math.random() })
+    let selected = shuffled.slice(0, y)
+    return(selected.toString())
+  }
+
+  const chooseDislikes = () => {
+    const y = 3
+    let shuffled = dislikes.sort(function(){ return 0.5 - Math.random() })
+    let selected = shuffled.slice(0, y)
+    return(selected.toString())
+  }
+
 
   return (
     <div className='all-pups-div'>
@@ -26,7 +51,7 @@ export default function AllPlayers() {
       <div className='reg-players'>
         {players.map((puppy) => (
           <div className='pup-card' key={puppy.id}>
-            <p key={puppy.id}>{puppy.name}</p>
+            <p id='pup-name' key={puppy.id}>{puppy.name}</p>
             <img src={puppy.imageUrl} alt={'picture of ' + puppy.name} />
             <button data-id='data-pup-id' onClick={() => setShowDetails((prev) => (prev === puppy.id ? null : puppy.id))
             } className='details-btn'>
@@ -37,6 +62,9 @@ export default function AllPlayers() {
                 <p>{puppy.breed}</p>
                 <p>Position: {puppy.status}</p>
                 <p>Team # {puppy.teamId ? puppy.teamId : 'Currently benched'}</p>
+                <p>Known tricks: {chooseTricks()}</p>
+                <p>Likes: {chooseLikes()}</p>
+                <p>Dislikes: {chooseDislikes()}</p>
               </span>
             )}
             <button onClick={handleRemoval} className='remove-puppy' data-id={puppy.id} >Remove</button>
