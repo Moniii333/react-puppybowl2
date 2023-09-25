@@ -1,0 +1,232 @@
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#show-section {
+  align-self: center;
+  height: 40rem;
+  width: 60rem;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+
+.navbar {
+  display: flex;
+  position: fixed;
+  border: 3px solid rgb(197, 168, 240);
+  width: 100%;
+  height: 10%;
+  background-color: #BC7AF9;
+  top: 0;
+  z-index: 3;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.navbar > :any-link {
+  margin: auto;
+  font-weight: 500;
+  color: #FFFFDD;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+button {
+  width: 75px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* form styles */
+.form-page-div{
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+  border: 2px solid whitesmoke;
+  box-shadow: 10px 5px 15px whitesmoke;
+  height: 35rem;
+  width: 35rem;
+  display: inline-block;
+  text-align: center;
+  background-image: url('/Users/moniii/Documents/coursework/block29/Puppy-Bowl2/src/images/stockPup.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-shadow: 2px 0 0 deeppink, -1px 0 0 black, 0 2px 0 black, 0 -1px 0 gray;
+  font-weight: bolder;
+  margin-top: -0%;
+}
+
+.form-h1 {
+  margin-top: 15%;
+  box-shadow: 10px 5px 15px whitesmoke;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.form-p {
+  width: 75%;
+  margin: auto;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.top-input {
+  margin-top: 20rem;
+}
+
+.bottom-input {
+  margin-top: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: dodgerblue;
+  opacity: 1;
+  font-weight: bolder;
+}
+
+.form-btn {
+  margin-top: 25px;
+  border-radius: 6px;
+  box-shadow: 5px 1px 8px burlywood;
+  background-color: peru;
+  color: azure;
+}
+.form-btn:hover {
+  cursor: pointer;
+}
+
+/* current players page styling */
+.all-pups-div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 60rem;
+  justify-content: center;
+}
+
+.reg-players {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45rem;
+  margin-bottom: 30px;
+}
+
+.pup-card {
+  border: 2px solid wheat;
+  height: 25rem;
+  justify-content: center;
+  padding: 5px;
+  text-align: center;
+}
+
+img {
+  width: 140px;
+  height: 130px;
+}
+
+#all-pups-h1 {
+  width: 50rem;
+  color: aliceblue;
+}
+
+.small-details {
+  width: 100px;
+  height: 100px;
+}
+
+.details-btn {
+  background-color: cornflowerblue;
+  color: azure;
+  width: 4rem;
+  align-items: center;
+}
+
+.remove-puppy {
+  background-color: crimson;
+  color: azure;
+  height: 25px;
+  width: 4rem;
+  margin-top: 10px;
+  align-items: center;
+}
+
+/* search bar page */
+#search-page-div{
+  margin: 10% 25% 0 0;
+}
+
+
+#search-input {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 35%;
+  height: 35px;
+  width: 14rem;
+  text-align: center;
+  opacity: .9;
+  margin: 20px;
+  background-color: aliceblue;
+  font-size: medium;
+  border-radius: 10px;
+  box-shadow: 8px 2px 10px #FFC436;
+}
+
+#search-btn {
+  margin: 10px;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-results {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+/* home page */
+.home-pic {
+  height: 220px;
+  width: 320px;
+}
+
+.home-pic2 {
+  height: 220px;
+  width: 320px;
+}
+
+.home-div {
+  margin-top: 5rem;
+  width: 60vw;
+}
+
+.home-paragraph {
+  background-color: #F6F4EB;
+  color: #331D2C;
+}
