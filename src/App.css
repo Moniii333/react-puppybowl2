@@ -214,15 +214,25 @@ img {
 .home-pic {
   height: 220px;
   width: 320px;
+  background-image: url('images/homePage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-flex;
 }
 
 .home-pic2 {
   height: 220px;
   width: 320px;
+  background-image: url('images/puppy.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-flex;
 }
 
 .home-div {
   margin-top: 5rem;
+  display: absolute;
+  right: 50%;
   width: 60vw;
 }
 
